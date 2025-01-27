@@ -7,7 +7,7 @@ import andresFace from '../assets/images/Assets-17.jpg'
 import individualTerapy from '../assets/images/Assets-02.jpg'
 import coupleTerapy from '../assets/images/Assets-03.jpg'
 import sexualTerapy from '../assets/images/Assets-04.jpg'
-import familyTerapy from '../assets/images/Assets-02.jpg'
+import familyTerapy from '../assets/images/Assets-05.jpg'
 import handTop from '../assets/images/Assets-07.jpg'
 import handBottom from '../assets/images/Assets-06.jpg'
 import keyBg from '../assets/images/Assets-08.png'
@@ -310,14 +310,16 @@ const Home = () => {
 					alignItems='center'
 					gap={{ base: '4', md: '6' }}
 				>
-					<Image
-						src={individualTerapy}
-						objectFit='contain'
-						w='100%'
-						h={{ base: '200px', md: '300px' }}
-						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
-						minW='0'
-					/>
+					<a href='#individual-therapy'>
+						<Image
+							src={individualTerapy}
+							objectFit='contain'
+							w='100%'
+							h={{ base: '200px', md: '300px' }}
+							flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
+							minW='0'
+						/>
+					</a>
 					<Box
 						display='flex'
 						flexDirection='column'
@@ -325,29 +327,35 @@ const Home = () => {
 						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
 						gap='3'
 					>
-						<Image
-							src={coupleTerapy}
-							objectFit='contain'
-							w='100%'
-							h={{ base: '200px', md: '300px' }}
-							minW='0'
-						/>
-						<Image
-							src={sexualTerapy}
-							objectFit='contain'
-							w='100%'
-							h={{ base: '200px', md: '300px' }}
-							minW='0'
-						/>
+						<a href='#couple-therapy'>
+							<Image
+								src={coupleTerapy}
+								objectFit='contain'
+								w='100%'
+								h={{ base: '200px', md: '300px' }}
+								minW='0'
+							/>
+						</a>
+						<a href='#sexual-therapy'>
+							<Image
+								src={sexualTerapy}
+								objectFit='contain'
+								w='100%'
+								h={{ base: '200px', md: '300px' }}
+								minW='0'
+							/>
+						</a>
 					</Box>
-					<Image
-						src={familyTerapy}
-						objectFit='contain'
-						w='100%'
-						h={{ base: '200px', md: '300px' }}
-						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
-						minW='0'
-					/>
+					<a href='#family-therapy'>
+						<Image
+							src={familyTerapy}
+							objectFit='contain'
+							w='100%'
+							h={{ base: '200px', md: '300px' }}
+							flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
+							minW='0'
+						/>
+					</a>
 				</Box>
 			</Box>
 
@@ -668,6 +676,7 @@ const Home = () => {
 				/>
 
 				<Heading
+					id='individual-therapy'
 					as='h1'
 					color='white'
 					fontSize={{
@@ -705,6 +714,7 @@ const Home = () => {
 				</Text>
 
 				<Heading
+					id='couple-therapy'
 					as='h1'
 					color='white'
 					fontSize={{
@@ -743,13 +753,14 @@ const Home = () => {
 				</Text>
 
 				<Heading
+					id='family-therapy'
 					as='h1'
 					color='white'
 					fontSize={{
 						base: '32px',
 						sm: '36px',
 						md: '40px',
-						lg: '45px'
+						lg: '45px',
 					}}
 					fontWeight='200'
 					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
@@ -783,6 +794,7 @@ const Home = () => {
 				</Text>
 
 				<Heading
+					id='sexual-therapy'
 					as='h1'
 					color='white'
 					fontSize={{
@@ -942,7 +954,7 @@ const Home = () => {
 						base: '32px',
 						sm: '36px',
 						md: '40px',
-						lg: '45px'
+						lg: '45px',
 					}}
 					fontWeight='200'
 					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '30' }}
