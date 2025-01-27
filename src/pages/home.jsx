@@ -284,7 +284,7 @@ const Home = () => {
 				id='our-services'
 				as='article'
 				w='full'
-				p='24'
+				p={{ base: '4', sm: '8', md: '24' }}
 				display='flex'
 				flexDirection='column'
 				alignItems='center'
@@ -292,9 +292,9 @@ const Home = () => {
 				<Heading
 					as='h1'
 					color={Colors.secondary}
-					fontSize={{ base: '30px', md: '50px' }}
+					fontSize={{ base: '24px', sm: '30px', md: '50px' }}
 					fontWeight='200'
-					mb='28'
+					mb={{ base: '16', md: '28' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 				>
@@ -302,52 +302,50 @@ const Home = () => {
 				</Heading>
 
 				<Box
-					w={{ base: '100%', md: '80%' }}
+					w='full'
 					display='flex'
 					flexWrap='wrap'
 					justifyContent='center'
 					alignItems='center'
-					gap='6'
+					gap={{ base: '4', md: '6' }}
 				>
 					<Image
 						src={individualTerapy}
 						objectFit='contain'
 						w='100%'
-						h='300px'
-						flexBasis={{ base: '100%', md: '30%' }}
-						minW={{ base: '200px', md: 'none' }}
+						h={{ base: '200px', md: '300px' }}
+						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
+						minW='0'
 					/>
 					<Box
 						display='flex'
 						flexDirection='column'
 						alignItems='center'
-						flexBasis={{ base: '100%', md: '30%' }}
-						mr={{ base: '0', md: '3' }}
-						ml={{ base: '0', md: '3' }}
+						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
 						gap='3'
 					>
 						<Image
 							src={coupleTerapy}
 							objectFit='contain'
 							w='100%'
-							h='300px'
-							minW={{ base: '200px', md: 'none' }}
+							h={{ base: '200px', md: '300px' }}
+							minW='0'
 						/>
 						<Image
 							src={sexualTerapy}
 							objectFit='contain'
 							w='100%'
-							h='300px'
-							minW={{ base: '200px', md: 'none' }}
+							h={{ base: '200px', md: '300px' }}
+							minW='0'
 						/>
 					</Box>
 					<Image
 						src={familyTerapy}
 						objectFit='contain'
 						w='100%'
-						h='300px'
-						flexBasis={{ base: '100%', md: '30%' }}
-						minW={{ base: '200px', md: 'none' }}
+						h={{ base: '200px', md: '300px' }}
+						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
+						minW='0'
 					/>
 				</Box>
 			</Box>
@@ -355,7 +353,7 @@ const Home = () => {
 			<Box
 				as='article'
 				w='full'
-				p='24'
+				p={{ base: '4', sm: '8', md: '16', lg: '24' }}
 				display='flex'
 				flexDirection='column'
 				alignItems='center'
@@ -365,16 +363,16 @@ const Home = () => {
 					as='h1'
 					color={Colors.secondary}
 					fontSize={{
-						base: '32px',
-						sm: '36px',
+						base: '36px',
 						md: '40px',
 						lg: '50px',
 						xl: '60px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
+					mb={{ base: '8', sm: '12', md: '16', lg: '24', xl: '32' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
+					px={{ base: '2', sm: '4' }}
 				>
 					Servicios de psicología clínica
 				</Heading>
@@ -382,16 +380,17 @@ const Home = () => {
 					color={Colors.secondary}
 					fontWeight='100'
 					fontSize={{
-						base: '16px',
-						sm: '18px',
-						md: '20px',
-						lg: '25px',
-						xl: '28px',
+						base: '15px',
+						sm: '16px',
+						md: '18px',
+						lg: '22px',
+						xl: '25px',
 					}}
 					fontFamily='montserrat'
 					textAlign='center'
-					w={{ base: '90%', sm: '85%', md: '80%', lg: '75%', xl: '70%' }}
-					lineHeight='1.5'
+					w={{ base: '95%', sm: '90%', md: '85%', lg: '80%', xl: '75%' }}
+					lineHeight={{ base: '1.6', md: '1.5' }}
+					px={{ base: '2', sm: '4' }}
 				>
 					El espacio de terapia sistémica breve y centrado en soluciones está
 					pensando para acompañar desde lo individual, en pareja, en familia y
@@ -414,16 +413,17 @@ const Home = () => {
 					as='h1'
 					color={Colors.secondary}
 					fontSize={{
-						base: '25px',
-						sm: '30px',
+						base: '20px',
+						sm: '25px',
 						md: '35px',
 					}}
 					fontWeight='200'
-					mt={{ base: '12', sm: '16', md: '20' }}
+					mt={{ base: '8', sm: '12', md: '16' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
+					px={{ base: '2', sm: '4' }}
 				>
-					“Un viaje de mil millas comienza con un primer paso” Lao-Tse
+					"Un viaje de mil millas comienza con un primer paso" Lao-Tse
 				</Heading>
 			</Box>
 
@@ -484,13 +484,22 @@ const Home = () => {
 						<Heading
 							as='h3'
 							color={Colors.secondary}
-							fontSize={{ base: '32px', sm: '36px', md: '50px' }}
+							fontSize={{ base: '24px', sm: '32px', md: '50px' }}
 							fontWeight='200'
-							mb={{ base: '12', sm: '16', md: '20' }}
 							fontFamily='sugo pro display'
 							textAlign='center'
+							lineHeight={{ base: '1.1', sm: '1.2', md: '1.3' }}
+							px={{ base: '1', sm: '2' }}
+							display='flex'
+							flexWrap='wrap'
+							justifyContent='center'
+							alignItems='center'
+							gap={{ base: '0.5', sm: '1' }}
+							mb={{ base: '2', sm: '3', md: '4' }}
 						>
-							Para adolescentes y adultos:
+							<Box as='span' display='inline-flex' alignItems='center'>
+								Para adolescentes y adultos
+							</Box>
 						</Heading>
 
 						<Box
@@ -533,36 +542,67 @@ const Home = () => {
 						borderLeft={{ base: 'none', md: '0.5px solid' }}
 						borderColor={Colors.secondary}
 					>
-						<Heading
-							as='h3'
-							color={Colors.secondary}
-							fontSize={{ base: '32px', sm: '36px', md: '50px' }}
-							fontWeight='200'
-							fontFamily='sugo pro display'
-							textAlign='center'
+						<Box
+							display='flex'
+							flexDirection='column'
+							alignItems='center'
+							gap={{ base: '2', sm: '3', md: '4' }}
 						>
-							Para niños de{' '}
-							<Span
-								fontFamily='poppins'
-								fontSize={{ base: '25px', sm: '30px', md: '40px' }}
-								fontWeight='900'
+							<Heading
+								as='h3'
+								color={Colors.secondary}
+								fontSize={{ base: '24px', sm: '32px', md: '50px' }}
+								fontWeight='200'
+								fontFamily='sugo pro display'
+								textAlign='center'
+								lineHeight={{ base: '1.1', sm: '1.2', md: '1.3' }}
+								px={{ base: '1', sm: '2' }}
+								display='flex'
+								flexWrap='wrap'
+								justifyContent='center'
+								alignItems='center'
+								gap={{ base: '0.5', sm: '1' }}
+								mb='0'
 							>
-								7
-							</Span>{' '}
-							años en adelante
-						</Heading>
-						<Heading
-							as='h3'
-							color={Colors.secondary}
-							fontSize={{ base: '32px', sm: '36px', md: '50px' }}
-							fontWeight='200'
-							mb={{ base: '12', sm: '16', md: '20' }}
-							fontFamily='sugo pro display'
-							textAlign='center'
-						>
-							(atención presencial)
-						</Heading>
-
+								<Box
+									as='span'
+									display='inline-flex'
+									alignItems='center'
+									mr={{ base: '0.5', sm: '1' }}
+								>
+									Para niños de
+								</Box>
+								<Span
+									fontFamily='poppins'
+									fontSize={{ base: '20px', sm: '28px', md: '40px' }}
+									fontWeight='900'
+									mx={{ base: '0.5', sm: '1' }}
+									display='inline-flex'
+									alignItems='center'
+								>
+									7
+								</Span>
+								<Box
+									as='span'
+									display='inline-flex'
+									alignItems='center'
+									ml={{ base: '0.5', sm: '1' }}
+								>
+									años en adelante
+								</Box>
+							</Heading>
+							<Heading
+								as='h3'
+								color={Colors.secondary}
+								fontSize={{ base: '20px', sm: '24px', md: '32px' }}
+								fontWeight='200'
+								fontFamily='sugo pro display'
+								textAlign='center'
+								mt='0'
+							>
+								(atención presencial)
+							</Heading>
+						</Box>
 						<Box
 							as='ul'
 							listStyle='outside'
