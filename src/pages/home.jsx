@@ -109,6 +109,7 @@ const Home = () => {
 							w={{ base: '200px', md: '350px' }}
 							h={{ base: '200px', md: '350px' }}
 							objectFit='contain'
+							loading='lazy'
 						/>
 
 						<Heading
@@ -181,6 +182,7 @@ const Home = () => {
 							w={{ base: '200px', md: '350px' }}
 							h={{ base: '200px', md: '350px' }}
 							objectFit='contain'
+							loading='lazy'
 						/>
 
 						<Heading
