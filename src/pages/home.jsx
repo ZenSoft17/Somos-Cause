@@ -40,11 +40,10 @@ const Home = () => {
 						base: '32px',
 						sm: '36px',
 						md: '40px',
-						lg: '50px',
-						xl: '60px',
+						xl: '45px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
+					mb={{ base: '12', sm: '16', md: '20', lg: '28' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 				>
@@ -294,7 +293,7 @@ const Home = () => {
 				<Heading
 					as='h1'
 					color={Colors.secondary}
-					fontSize={{ base: '24px', sm: '30px', md: '50px' }}
+					fontSize={{ base: '24px', sm: '30px', md: '45px' }}
 					fontWeight='200'
 					mb={{ base: '16', md: '28' }}
 					fontFamily='sugo pro display'
@@ -367,11 +366,10 @@ const Home = () => {
 					fontSize={{
 						base: '36px',
 						md: '40px',
-						lg: '50px',
-						xl: '60px',
+						lg: '45px',
 					}}
 					fontWeight='200'
-					mb={{ base: '8', sm: '12', md: '16', lg: '24', xl: '32' }}
+					mb={{ base: '8', sm: '12', md: '16', lg: '24', xl: '30' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					px={{ base: '2', sm: '4' }}
@@ -466,7 +464,7 @@ const Home = () => {
 				<Heading
 					as='h1'
 					color={Colors.secondary}
-					fontSize={{ base: '32px', sm: '36px', md: '60px' }}
+					fontSize={{ base: '32px', sm: '36px', md: '45px' }}
 					fontWeight='200'
 					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
 					fontFamily='sugo pro display'
@@ -486,7 +484,7 @@ const Home = () => {
 						<Heading
 							as='h3'
 							color={Colors.secondary}
-							fontSize={{ base: '24px', sm: '32px', md: '50px' }}
+							fontSize={{ base: '24px', sm: '32px', md: '40px' }}
 							fontWeight='200'
 							fontFamily='sugo pro display'
 							textAlign='center'
@@ -553,7 +551,7 @@ const Home = () => {
 							<Heading
 								as='h3'
 								color={Colors.secondary}
-								fontSize={{ base: '24px', sm: '32px', md: '50px' }}
+								fontSize={{ base: '24px', sm: '32px', md: '40px' }}
 								fontWeight='200'
 								fontFamily='sugo pro display'
 								textAlign='center'
@@ -676,11 +674,10 @@ const Home = () => {
 						base: '32px',
 						sm: '36px',
 						md: '40px',
-						lg: '50px',
-						xl: '60px',
+						lg: '45px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
+					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '30' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -714,8 +711,7 @@ const Home = () => {
 						base: '32px',
 						sm: '36px',
 						md: '40px',
-						lg: '50px',
-						xl: '60px',
+						lg: '45px',
 					}}
 					fontWeight='200'
 					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
@@ -753,8 +749,7 @@ const Home = () => {
 						base: '32px',
 						sm: '36px',
 						md: '40px',
-						lg: '50px',
-						xl: '60px',
+						lg: '45px'
 					}}
 					fontWeight='200'
 					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
@@ -794,8 +789,7 @@ const Home = () => {
 						base: '32px',
 						sm: '36px',
 						md: '40px',
-						lg: '50px',
-						xl: '60px',
+						lg: '45px',
 					}}
 					fontWeight='200'
 					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
@@ -835,8 +829,7 @@ const Home = () => {
 						base: '32px',
 						sm: '36px',
 						md: '40px',
-						lg: '50px',
-						xl: '60px',
+						lg: '45px',
 					}}
 					fontWeight='200'
 					mb={{ base: '12', sm: '16', md: '20' }}
@@ -913,7 +906,7 @@ const Home = () => {
 							base: '18px',
 							sm: '28px',
 							md: '36px',
-							lg: '50px',
+							lg: '45px',
 						}}
 						fontWeight='700'
 						textTransform='uppercase'
@@ -949,11 +942,10 @@ const Home = () => {
 						base: '32px',
 						sm: '36px',
 						md: '40px',
-						lg: '50px',
-						xl: '60px',
+						lg: '45px'
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
+					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '30' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -1095,7 +1087,7 @@ const Home = () => {
 				>
 					<Heading
 						as='h4'
-						fontSize={{ base: '28px', sm: '32px', md: '40px', lg: '50px' }}
+						fontSize={{ base: '28px', sm: '32px', md: '40px', lg: '45px' }}
 						fontWeight='400'
 						color={Colors.secondary}
 						fontFamily='sugo pro display'
@@ -1202,7 +1194,7 @@ const Home = () => {
 										base: '28px',
 										sm: '32px',
 										md: '40px',
-										lg: '50px',
+										lg: '45px',
 									}}
 									fontWeight='400'
 									color={Colors.secondary}
