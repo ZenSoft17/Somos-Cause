@@ -2,10 +2,11 @@ import { Box, Image } from '@chakra-ui/react'
 import Footer from '../footer'
 import Navbar from '../navbar'
 import whatsappIcon from '../../assets/images/whatsapp.png'
+import { Colors } from '../../utils/colors'
 
 const MainLayout = ({ children }) => {
 	return (
-		<Box bg='white' position='relative'>
+		<Box bg={Colors.third} position='relative'>
 			<Navbar />
 			{children}
 			<Footer />

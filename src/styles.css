@@ -4,9 +4,20 @@
 }
 
 @font-face {
+	font-family: 'montserrat bold';
+	src: url('./assets/fonts/Montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
 	font-family: 'sugo pro display';
 	src: url('./assets/fonts/sugo-pro-classic/Sugo-Pro-Classic-Regular-trial.ttf');
 }
+
+@font-face {
+	font-family: 'sugo pro display bold';
+	src: url('./assets/fonts/sugo-pro-classic/Sugo-Pro-Display-Bold-trial.ttf');
+}
+
 
 @font-face {
 	font-family: 'poppins';

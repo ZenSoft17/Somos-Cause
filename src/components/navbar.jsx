@@ -50,7 +50,7 @@ const Navbar = () => {
 			>
 				<Heading
 					as='h2'
-					fontSize={{ md: '33px' }}
+					fontSize={{ md: '28px', lg: '33px' }}
 					color={Colors.secondary}
 					letterSpacing='1px'
 					fontWeight='300'
@@ -61,7 +61,7 @@ const Navbar = () => {
 				</Heading>
 				<Heading
 					as='h2'
-					fontSize={{ md: '32px' }}
+					fontSize={{ md: '28px', lg: '32px' }}
 					color={Colors.secondary}
 					letterSpacing='1px'
 					fontWeight='300'
@@ -76,8 +76,16 @@ const Navbar = () => {
 				src={Logo1}
 				alt='Logo de la empresa'
 				loading='lazy'
-				w={{ base: '100px', md: animate ? '120px' : '350px' }}
-				h={{ base: '100px', md: animate ? '120px' : '350px' }}
+				w={{
+					base: '100px',
+					md: animate ? '90px' : '250px',
+					lg: animate ? '120px' : '350px',
+				}}
+				h={{
+					base: '100px',
+					md: animate ? '90px' : '250px',
+					lg: animate ? '120px' : '350px',
+				}}
 				objectFit='contain'
 				mb={{ base: 0, md: 0 }}
 				transition='width 0.5s linear, height 0.5s linear'
@@ -96,7 +104,7 @@ const Navbar = () => {
 			>
 				<Heading
 					as='h2'
-					fontSize={{ md: '33px' }}
+					fontSize={{ md: '28px', lg: '33px' }}
 					color={Colors.secondary}
 					letterSpacing='1px'
 					fontWeight='300'
@@ -107,7 +115,7 @@ const Navbar = () => {
 				</Heading>
 				<Heading
 					as='h2'
-					fontSize={{ md: '32px' }}
+					fontSize={{ md: '28px', lg: '32px' }}
 					color={Colors.secondary}
 					letterSpacing='1px'
 					fontWeight='300'

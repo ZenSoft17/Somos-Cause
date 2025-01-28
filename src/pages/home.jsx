@@ -1,21 +1,29 @@
 import MainLayout from '../components/layout/main.layout'
-import { Box, Heading, Image, Span, Text } from '@chakra-ui/react'
+import {
+	Box,
+	Button,
+	Heading,
+	Image,
+	Separator,
+	Span,
+	Text,
+} from '@chakra-ui/react'
 import { Colors } from '../utils/colors'
 import bg1 from '../assets/images/family-therapy-psychologist-office.jpg'
-import valenFace from '../assets/images/Assets-15.jpg'
-import andresFace from '../assets/images/Assets-17.jpg'
-import individualTerapy from '../assets/images/Assets-02.jpg'
-import coupleTerapy from '../assets/images/Assets-03.jpg'
-import sexualTerapy from '../assets/images/Assets-04.jpg'
-import familyTerapy from '../assets/images/Assets-05.jpg'
-import handTop from '../assets/images/Assets-07.jpg'
-import handBottom from '../assets/images/Assets-06.jpg'
+import valenFace from '../assets/images/Assets-15.png'
+import andresFace from '../assets/images/Assets-17.png'
+import individualTerapy from '../assets/images/Assets-02.png'
+import coupleTerapy from '../assets/images/Assets-03.png'
+import sexualTerapy from '../assets/images/Assets-04.png'
+import familyTerapy from '../assets/images/Assets-05.png'
+import handTop from '../assets/images/Assets-07.png'
+import handBottom from '../assets/images/Assets-06.png'
 import keyBg from '../assets/images/Assets-08.png'
-import inPersonIcon from '../assets/images/Assets-10.jpg'
-import virtualIcon from '../assets/images/Assets-11.jpg'
+import inPersonIcon from '../assets/images/Assets-10.png'
+import virtualIcon from '../assets/images/Assets-11.png'
 import InstagramIcon from '../assets/images/instagram_icon.png'
 import mailIcon from '../assets/images/mail_icon.png'
-import whatsappIcon from '../assets/images/whatsapp_icon.png'
+import whatsappIcon2 from '../assets/images/whatsapp_icon.png'
 import valenAndandres from '../assets/images/Valentina-3.jpg'
 import valenInCouch from '../assets/images/Valentina-68_E.jpg'
 
@@ -28,7 +36,7 @@ const Home = () => {
 				id='know-us'
 				as='article'
 				w='full'
-				p={{ base: '8', sm: '12', md: '16', lg: '24', xl: '32' }}
+				p={{ base: '8', sm: '12', md: '16', lg: '24', xl: '140px' }}
 				display='flex'
 				flexDirection='column'
 				alignItems='center'
@@ -43,7 +51,7 @@ const Home = () => {
 						xl: '45px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28' }}
+					mb={{ base: '12', sm: '16', md: '20', lg: '118px' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 				>
@@ -55,14 +63,13 @@ const Home = () => {
 					fontSize={{
 						base: '16px',
 						sm: '18px',
-						md: '20px',
-						lg: '25px',
-						xl: '28px',
+						md: '24px',
 					}}
 					fontFamily='montserrat'
 					textAlign='center'
 					w={{ base: '90%', sm: '85%', md: '80%', lg: '75%', xl: '70%' }}
 					lineHeight='1.5'
+					mb={{ base: '8', sm: '10', md: '12', lg: '16' }}
 				>
 					En Somos Cauce esperamos que encuentres un lugar para construir tus
 					propias historias, aquellas que has imaginado a futuro. No tenemos una
@@ -74,13 +81,35 @@ const Home = () => {
 					Cauce tanto tú como nosotros somos expertos, por eso brindamos un
 					trabajo colaborativo centrado en soluciones.
 				</Text>
+				<Button
+					size='lg'
+					bg={Colors.secondary}
+					color={Colors.third}
+					px={{ base: '8', md: '12' }}
+					py={{ base: '6', md: '8' }}
+					fontSize={{ base: '18px', md: '20px' }}
+					fontFamily='montserrat'
+					fontWeight='500'
+					transform='scale(1)'
+					transition='all 0.3s ease'
+					_hover={{
+						transform: 'scale(1.05)',
+						bg: Colors.secondary,
+						boxShadow: 'xl',
+					}}
+					_active={{
+						transform: 'scale(0.95)',
+					}}
+				>
+					Agenda tu cita ahora
+				</Button>
 			</Box>
 
 			<Box
 				w='full'
 				h='auto'
-				pt='28'
-				pb='28'
+				pt='140px'
+				pb='140px'
 				bgImage={`url(${bg1})`}
 				bgSize='cover'
 				bgPosition='center'
@@ -95,13 +124,13 @@ const Home = () => {
 					gap='8'
 				>
 					<Box
-						w={{ base: '90%', sm: '70%', md: '50%', lg: '25%' }}
-						bg='white'
+						w={{ base: '90%', sm: '70%', md: '450px', lg: '450px' }}
+						bg={Colors.third}
 						p={{ base: '8', md: '12' }}
 						display='flex'
 						flexDirection='column'
 						alignItems='center'
-						mr={{ base: '0', lg: '8' }}
+						mr={{ base: '0', lg: '23px' }}
 					>
 						<Image
 							src={valenFace}
@@ -119,26 +148,15 @@ const Home = () => {
 							fontWeight='800'
 							color={Colors.secondary}
 							mt='8'
-						>
-							Valentina Holguín
-						</Heading>
-
-						<Heading
-							as='h1'
-							fontSize={{ base: '18px', md: '24px' }}
-							fontFamily='montserrat'
-							textAlign='center'
-							fontWeight='800'
-							color={Colors.secondary}
 							mb='8'
 						>
-							18 añitos aparenta
+							Valentina Holguín
 						</Heading>
 
 						<Text
 							color={Colors.secondary}
 							fontWeight='100'
-							fontSize={{ base: '16px', md: '22px' }}
+							fontSize={{ base: '16px', md: '20px' }}
 							fontFamily='montserrat'
 							textAlign='center'
 							mb='8'
@@ -158,7 +176,7 @@ const Home = () => {
 						<Text
 							color={Colors.secondary}
 							fontWeight='100'
-							fontSize={{ base: '16px', md: '22px' }}
+							fontSize={{ base: '16px', md: '20px' }}
 							fontFamily='montserrat'
 							textAlign='center'
 						>
@@ -168,13 +186,13 @@ const Home = () => {
 					</Box>
 
 					<Box
-						w={{ base: '90%', sm: '70%', md: '50%', lg: '25%' }}
-						bg='white'
+						w={{ base: '90%', sm: '70%', md: '450px', lg: '450px' }}
+						bg={Colors.third}
 						p={{ base: '8', md: '12' }}
 						display='flex'
 						flexDirection='column'
 						alignItems='center'
-						ml={{ base: '0', lg: '8' }}
+						ml={{ base: '0', lg: '23px' }}
 					>
 						<Image
 							src={andresFace}
@@ -192,31 +210,19 @@ const Home = () => {
 							fontWeight='800'
 							color={Colors.secondary}
 							mt='8'
-						>
-							Julián Alberto Mejía
-						</Heading>
-
-						<Heading
-							as='h1'
-							fontSize={{ base: '18px', md: '24px' }}
-							fontFamily='montserrat'
-							textAlign='center'
-							fontWeight='800'
-							color={Colors.secondary}
 							mb='8'
 						>
-							30 años
+							Julián Alberto Mejía
 						</Heading>
 
 						<Text
 							color={Colors.secondary}
 							fontWeight='100'
-							fontSize={{ base: '16px', md: '22px' }}
+							fontSize={{ base: '16px', md: '20px' }}
 							fontFamily='montserrat'
 							textAlign='center'
-							mb='8'
 						>
-							Soy Julián Mejía abogado y defensor de Derechos Humanos,
+							Soy Julián Mejía, abogado y defensor de Derechos Humanos,
 							comprometido con la promoción de justicia social y la protección
 							de los derechos fundamentales. Mi enfoque está en impulsar un
 							cambio positivo a través del conocimiento legal, la ética y el
@@ -225,23 +231,31 @@ const Home = () => {
 
 						<Heading
 							as='h1'
-							fontSize={{ base: '18px', md: '24px' }}
+							fontSize={{ base: '18px', md: '20px' }}
 							fontFamily='montserrat'
 							textAlign='center'
 							fontWeight='800'
 							color={Colors.secondary}
-							mb='8'
+							mt='4'
+							mb='4'
 						>
 							¿Qué ofrezco?
 						</Heading>
 
-						<Box as='ul' listStyle='outside'>
+						<Box
+							as='ul'
+							listStyle='outside'
+							display='flex'
+							flexDirection='column'
+							alignItems='center'
+						>
 							<Heading
 								as='li'
 								color={Colors.secondary}
 								fontWeight='100'
-								fontSize={{ base: '16px', md: '22px' }}
+								fontSize={{ base: '16px', md: '20px' }}
 								fontFamily='montserrat'
+								textAlign='center'
 							>
 								Experiencia en investigación y comunicación efectiva.
 							</Heading>
@@ -249,8 +263,9 @@ const Home = () => {
 								as='li'
 								color={Colors.secondary}
 								fontWeight='100'
-								fontSize={{ base: '16px', md: '22px' }}
+								fontSize={{ base: '16px', md: '20px' }}
 								fontFamily='montserrat'
+								textAlign='center'
 							>
 								Habilidades de liderazgo y coordinación en equipos
 								multidisciplinarios.
@@ -259,8 +274,9 @@ const Home = () => {
 								as='li'
 								color={Colors.secondary}
 								fontWeight='100'
-								fontSize={{ base: '16px', md: '22px' }}
+								fontSize={{ base: '16px', md: '20px' }}
 								fontFamily='montserrat'
+								textAlign='center'
 							>
 								Experiencia en relaciones públicas para proyectos con entidades
 								gubernamentales y no gubernamentales.
@@ -269,8 +285,9 @@ const Home = () => {
 								as='li'
 								color={Colors.secondary}
 								fontWeight='100'
-								fontSize={{ base: '16px', md: '22px' }}
+								fontSize={{ base: '16px', md: '20px' }}
 								fontFamily='montserrat'
+								textAlign='center'
 							>
 								Capacidad para diseñar y gestionar proyectos enfocados en la
 								promoción de la paz y los Derechos Humanos y Actividades clave
@@ -285,7 +302,7 @@ const Home = () => {
 				id='our-services'
 				as='article'
 				w='full'
-				p={{ base: '4', sm: '8', md: '24' }}
+				p={{ base: '4', sm: '8', md: '24', lg: '140px' }}
 				display='flex'
 				flexDirection='column'
 				alignItems='center'
@@ -295,7 +312,7 @@ const Home = () => {
 					color={Colors.secondary}
 					fontSize={{ base: '24px', sm: '30px', md: '45px' }}
 					fontWeight='200'
-					mb={{ base: '16', md: '28' }}
+					mb={{ base: '16', md: '28', lg: '140px' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 				>
@@ -304,58 +321,91 @@ const Home = () => {
 
 				<Box
 					w='full'
+					maxW='1440px'
 					display='flex'
 					flexWrap='wrap'
 					justifyContent='center'
 					alignItems='center'
-					gap={{ base: '4', md: '6' }}
+					gap={{ base: 4, md: 6, xl: 0 }}
 				>
-					<a href='#individual-therapy'>
-						<Image
-							src={individualTerapy}
-							objectFit='contain'
-							w='100%'
-							h={{ base: '200px', md: '300px' }}
-							flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
-							minW='0'
-						/>
-					</a>
 					<Box
-						display='flex'
-						flexDirection='column'
-						alignItems='center'
 						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
-						gap='3'
+						minW='0'
+						px={{ xl: 4 }}
 					>
-						<a href='#couple-therapy'>
+						<a href='#individual-therapy'>
 							<Image
-								src={coupleTerapy}
+								src={individualTerapy}
+								alt='Terapia Individual'
 								objectFit='contain'
 								w='100%'
-								h={{ base: '200px', md: '300px' }}
-								minW='0'
-							/>
-						</a>
-						<a href='#sexual-therapy'>
-							<Image
-								src={sexualTerapy}
-								objectFit='contain'
-								w='100%'
-								h={{ base: '200px', md: '300px' }}
-								minW='0'
+								h={{ base: '200px', md: '250px' }}
+								transition='transform 0.3s ease'
+								_hover={{
+									transform: 'scale(1.02)',
+								}}
 							/>
 						</a>
 					</Box>
-					<a href='#family-therapy'>
-						<Image
-							src={familyTerapy}
-							objectFit='contain'
-							w='100%'
-							h={{ base: '200px', md: '300px' }}
-							flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
-							minW='0'
-						/>
-					</a>
+
+					<Box
+						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
+						minW='0'
+						display='flex'
+						flexDirection='column'
+						alignItems='center'
+						gap={{ base: 4, md: 6 }}
+						mx={{ xl: '-16' }}
+					>
+						<a href='#couple-therapy' style={{ width: '100%' }}>
+							<Image
+								src={coupleTerapy}
+								alt='Terapia de Pareja'
+								objectFit='contain'
+								w='100%'
+								h={{ base: '200px', md: '250px' }}
+								transition='transform 0.3s ease'
+								_hover={{
+									transform: 'scale(1.02)',
+								}}
+								mb='3'
+							/>
+						</a>
+						<a href='#sexual-therapy' style={{ width: '100%' }}>
+							<Image
+								mt='3'
+								src={sexualTerapy}
+								alt='Terapia Sexual'
+								objectFit='contain'
+								w='100%'
+								h={{ base: '200px', md: '250px' }}
+								transition='transform 0.3s ease'
+								_hover={{
+									transform: 'scale(1.02)',
+								}}
+							/>
+						</a>
+					</Box>
+
+					<Box
+						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
+						minW='0'
+						px={{ xl: 4 }}
+					>
+						<a href='#family-therapy'>
+							<Image
+								src={familyTerapy}
+								alt='Terapia Familiar'
+								objectFit='contain'
+								w='100%'
+								h={{ base: '200px', md: '250px' }}
+								transition='transform 0.3s ease'
+								_hover={{
+									transform: 'scale(1.02)',
+								}}
+							/>
+						</a>
+					</Box>
 				</Box>
 			</Box>
 
@@ -392,7 +442,7 @@ const Home = () => {
 						sm: '16px',
 						md: '18px',
 						lg: '22px',
-						xl: '25px',
+						xl: '24px',
 					}}
 					fontFamily='montserrat'
 					textAlign='center'
@@ -678,7 +728,7 @@ const Home = () => {
 				<Heading
 					id='individual-therapy'
 					as='h1'
-					color='white'
+					color={Colors.third}
 					fontSize={{
 						base: '32px',
 						sm: '36px',
@@ -694,14 +744,13 @@ const Home = () => {
 					Terapia individual
 				</Heading>
 				<Text
-					color='white'
+					color={Colors.third}
 					fontWeight='100'
 					fontSize={{
 						base: '16px',
 						sm: '18px',
 						md: '20px',
-						lg: '25px',
-						xl: '28px',
+						lg: '24px',
 					}}
 					fontFamily='montserrat'
 					textAlign='center'
@@ -716,7 +765,7 @@ const Home = () => {
 				<Heading
 					id='couple-therapy'
 					as='h1'
-					color='white'
+					color={Colors.third}
 					fontSize={{
 						base: '32px',
 						sm: '36px',
@@ -733,14 +782,13 @@ const Home = () => {
 					Terapia de pareja
 				</Heading>
 				<Text
-					color='white'
+					color={Colors.third}
 					fontWeight='100'
 					fontSize={{
 						base: '16px',
 						sm: '18px',
 						md: '20px',
-						lg: '25px',
-						xl: '28px',
+						lg: '24px',
 					}}
 					fontFamily='montserrat'
 					textAlign='center'
@@ -755,7 +803,7 @@ const Home = () => {
 				<Heading
 					id='family-therapy'
 					as='h1'
-					color='white'
+					color={Colors.third}
 					fontSize={{
 						base: '32px',
 						sm: '36px',
@@ -772,14 +820,13 @@ const Home = () => {
 					Terapia familiar
 				</Heading>
 				<Text
-					color='white'
+					color={Colors.third}
 					fontWeight='100'
 					fontSize={{
 						base: '16px',
 						sm: '18px',
 						md: '20px',
-						lg: '25px',
-						xl: '28px',
+						lg: '24px',
 					}}
 					fontFamily='montserrat'
 					textAlign='center'
@@ -796,7 +843,7 @@ const Home = () => {
 				<Heading
 					id='sexual-therapy'
 					as='h1'
-					color='white'
+					color={Colors.third}
 					fontSize={{
 						base: '32px',
 						sm: '36px',
@@ -813,14 +860,13 @@ const Home = () => {
 					Terapia sexual
 				</Heading>
 				<Text
-					color='white'
+					color={Colors.third}
 					fontWeight='100'
 					fontSize={{
 						base: '16px',
 						sm: '18px',
 						md: '20px',
-						lg: '25px',
-						xl: '28px',
+						lg: '24px',
 					}}
 					fontFamily='montserrat'
 					textAlign='center'
@@ -836,7 +882,7 @@ const Home = () => {
 
 				<Heading
 					as='h1'
-					color='white'
+					color={Colors.third}
 					fontSize={{
 						base: '32px',
 						sm: '36px',
@@ -872,7 +918,7 @@ const Home = () => {
 						<Heading
 							as='li'
 							key={index}
-							color='white'
+							color={Colors.third}
 							fontWeight='100'
 							fontSize={{ base: '18px', md: '22px', lg: '28px' }}
 							fontFamily='montserrat'
@@ -901,9 +947,8 @@ const Home = () => {
 					top='50%'
 					left='50%'
 					transform='translate(-50%, -50%)'
-					bg='white'
-					opacity='0.9'
-					p={{ base: '3', sm: '4', md: '6' }}
+					bg='rgba(255, 255, 255, 0.7)'
+					p={{ base: '3', sm: '4', md: '12' }}
 					borderRadius='md'
 					boxShadow='lg'
 					textAlign='center'
@@ -915,23 +960,44 @@ const Home = () => {
 					<Heading
 						as='h1'
 						fontSize={{
-							base: '18px',
-							sm: '28px',
-							md: '36px',
-							lg: '45px',
+							base: '24px',
+							sm: '36px',
+							md: '48px',
+							lg: '50px',
 						}}
-						fontWeight='700'
+						fontWeight='extrabold'
 						textTransform='uppercase'
 						color={Colors.secondary}
-						fontFamily='Montserrat, sans-serif'
+						fontFamily='montserrat bold'
 						textAlign='center'
 						p='0'
-						lineHeight='1.2'
-						letterSpacing={{ base: 'normal', sm: 'wide' }}
+						lineHeight='1.1'
+						letterSpacing={{ base: 'wide', sm: 'wider' }}
 						maxW='100%'
 						mx='auto'
 					>
-						Terapia Centrada en Soluciones
+						Terapia Centrada en
+					</Heading>
+					<Heading
+						as='h1'
+						fontSize={{
+							base: '24px',
+							sm: '36px',
+							md: '48px',
+							lg: '50px',
+						}}
+						fontWeight='extrabold'
+						textTransform='uppercase'
+						color={Colors.secondary}
+						fontFamily='montserrat bold'
+						textAlign='center'
+						p='0'
+						lineHeight='1.1'
+						letterSpacing={{ base: 'wide', sm: 'wider' }}
+						maxW='100%'
+						mx='auto'
+					>
+						Soluciones
 					</Heading>
 				</Box>
 			</Box>
@@ -949,7 +1015,7 @@ const Home = () => {
 			>
 				<Heading
 					as='h1'
-					color='white'
+					color={Colors.third}
 					fontSize={{
 						base: '32px',
 						sm: '36px',
@@ -965,14 +1031,13 @@ const Home = () => {
 					Talleres de Construcción de Paz y Educación para la Paz
 				</Heading>
 				<Text
-					color='white'
+					color={Colors.third}
 					fontWeight='100'
 					fontSize={{
 						base: '16px',
 						sm: '18px',
 						md: '20px',
-						lg: '25px',
-						xl: '28px',
+						lg: '24px',
 					}}
 					fontFamily='montserrat'
 					textAlign='center'
@@ -991,7 +1056,7 @@ const Home = () => {
 
 				<Heading
 					as='h1'
-					color='white'
+					color={Colors.third}
 					fontSize={{
 						base: '32px',
 						sm: '36px',
@@ -1007,14 +1072,13 @@ const Home = () => {
 					¿Qué ofrecemos?
 				</Heading>
 				<Text
-					color='white'
+					color={Colors.third}
 					fontWeight='100'
 					fontSize={{
 						base: '16px',
 						sm: '18px',
 						md: '20px',
-						lg: '25px',
-						xl: '28px',
+						lg: '24px',
 					}}
 					fontFamily='montserrat'
 					textAlign='center'
@@ -1032,7 +1096,7 @@ const Home = () => {
 
 				<Heading
 					as='h1'
-					color='white'
+					color={Colors.third}
 					fontSize={{
 						base: '32px',
 						sm: '36px',
@@ -1064,7 +1128,7 @@ const Home = () => {
 						<Heading
 							as='li'
 							key={index}
-							color='white'
+							color={Colors.third}
 							fontWeight='100'
 							fontSize={{ base: '18px', md: '22px', lg: '28px' }}
 							fontFamily='montserrat'
@@ -1087,6 +1151,7 @@ const Home = () => {
 				maxW='1400px'
 				mx='auto'
 				gap={{ base: 8, md: 12 }}
+				minH='500px'
 			>
 				<Box
 					w={{ base: '100%', lg: '50%' }}
@@ -1127,7 +1192,7 @@ const Home = () => {
 									}}
 									fontWeight='800'
 									color={Colors.secondary}
-									fontFamily='poppins'
+									fontFamily='montserrat bold'
 								>
 									{text}
 								</Heading>
@@ -1144,9 +1209,12 @@ const Home = () => {
 						maxW='300px'
 					>
 						{[
-							{ icon: whatsappIcon, href: '' },
+							{
+								icon: whatsappIcon2,
+								href: 'https://wa.me/573153416995?text=Hola,%20quiero%20agendar%20una%20cita.',
+							},
 							{ icon: InstagramIcon, href: '' },
-							{ icon: mailIcon, href: '' },
+							{ icon: mailIcon, href: 'somoscauces@gmail.com' },
 						].map((item, index) => (
 							<a key={index} href={item.href}>
 								<Image
@@ -1161,11 +1229,19 @@ const Home = () => {
 				</Box>
 
 				<Box
+					display={{ base: 'none', md: 'block' }}
+					w='4px'
+					bg={Colors.secondary}
+					opacity='0.5'
+					h='auto'
+					alignSelf='stretch'
+				></Box>
+
+				<Box
 					w={{ base: '100%', lg: '50%' }}
-					p={{ base: '4', sm: '6', md: '8', lg: '12' }}
-					borderLeft={{ base: 'none', lg: '0.5px solid' }}
+					p={{ base: '4', sm: '6', md: '8', lg: '22' }}
 					borderTop={{ base: '0.5px solid', lg: 'none' }}
-					borderColor={Colors.secondary}
+					borderColor='rgba(128, 128, 128, 0.1)'
 					display='flex'
 					flexDirection='column'
 					gap={{ base: 8, md: 12 }}
@@ -1219,12 +1295,10 @@ const Home = () => {
 									fontSize={{
 										base: '22px',
 										sm: '24px',
-										md: '32px',
-										lg: '40px',
 									}}
 									fontWeight='100'
 									color={Colors.secondary}
-									fontFamily='sugo pro display'
+									fontFamily='montserrat bold'
 								>
 									{item.subtitle}
 								</Heading>
@@ -1238,9 +1312,7 @@ const Home = () => {
 				as='h1'
 				color={Colors.secondary}
 				fontSize={{
-					base: '28px',
-					sm: '32px',
-					md: '36px',
+					base: '32px',
 				}}
 				fontWeight='100'
 				mb={{ base: '8', sm: '12', md: '16', lg: '20', xl: '24' }}
@@ -1248,7 +1320,7 @@ const Home = () => {
 				textAlign='center'
 				zIndex={1}
 			>
-				Síguenos en todas nuestras redes
+				Síguenos en todas nuestras redes y pide tu cita.
 			</Heading>
 		</MainLayout>
 	)

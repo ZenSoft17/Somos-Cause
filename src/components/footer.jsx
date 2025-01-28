@@ -73,8 +73,8 @@ const Footer = () => {
 					<Image
 						src={keyBg}
 						objectFit='contain'
-						w={{ base: '200px', sm: '250px', md: '300px', lg: '400px' }}
-						h={{ base: '200px', sm: '250px', md: '300px', lg: '400px' }}
+						w={{ base: '200px', sm: '250px', md: '300px', lg: '300px' }}
+						h={{ base: '200px', sm: '250px', md: '300px', lg: '300px' }}
 					/>
 				</Box>
 			</Box>
