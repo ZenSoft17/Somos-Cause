@@ -1261,7 +1261,7 @@ const Home = () => {
 							<Image
 								src={item.icon}
 								objectFit='contain'
-								w={{ base: '100px', md: '50px', md: '110px' }}
+								w={{ base: '100px', md: '50px', lg: '110px' }}
 							/>
 							<Box
 								display='flex'
