@@ -1,13 +1,5 @@
 import MainLayout from '../components/layout/main.layout'
-import {
-	Box,
-	Button,
-	Heading,
-	Image,
-	Separator,
-	Span,
-	Text,
-} from '@chakra-ui/react'
+import { Box, Button, Heading, Image, Span, Text } from '@chakra-ui/react'
 import { Colors } from '../utils/colors'
 import bg1 from '../assets/images/family-therapy-psychologist-office.jpg'
 import valenFace from '../assets/images/Assets-15.png'
@@ -36,7 +28,7 @@ const Home = () => {
 				id='know-us'
 				as='article'
 				w='full'
-				p={{ base: '8', sm: '12', md: '16', lg: '24', xl: '140px' }}
+				p={{ base: '50px', md: '16', lg: '24', xl: '140px' }}
 				display='flex'
 				flexDirection='column'
 				alignItems='center'
@@ -108,8 +100,8 @@ const Home = () => {
 			<Box
 				w='full'
 				h='auto'
-				pt='140px'
-				pb='140px'
+				pt={{ base: '50px', md: '16', lg: '24', xl: '140px' }}
+				pb={{ base: '50px', md: '16', lg: '24', xl: '140px' }}
 				bgImage={`url(${bg1})`}
 				bgSize='cover'
 				bgPosition='center'
@@ -147,8 +139,8 @@ const Home = () => {
 							textAlign='center'
 							fontWeight='800'
 							color={Colors.secondary}
-							mt='8'
-							mb='8'
+							mt={{ base: '4', md: '8' }}
+							mb={{ base: '4', md: '8' }}
 						>
 							Valentina Holguín
 						</Heading>
@@ -209,8 +201,8 @@ const Home = () => {
 							textAlign='center'
 							fontWeight='800'
 							color={Colors.secondary}
-							mt='8'
-							mb='8'
+							mt={{ base: '4', md: '8' }}
+							mb={{ base: '4', md: '8' }}
 						>
 							Julián Alberto Mejía
 						</Heading>
@@ -236,8 +228,8 @@ const Home = () => {
 							textAlign='center'
 							fontWeight='800'
 							color={Colors.secondary}
-							mt='4'
-							mb='4'
+							mt={{ base: '2', md: '4' }}
+							mb={{ base: '2', md: '4' }}
 						>
 							¿Qué ofrezco?
 						</Heading>
@@ -302,7 +294,7 @@ const Home = () => {
 				id='our-services'
 				as='article'
 				w='full'
-				p={{ base: '4', sm: '8', md: '24', lg: '140px' }}
+				p={{ base: '50px', md: '16', lg: '24', xl: '140px' }}
 				display='flex'
 				flexDirection='column'
 				alignItems='center'
@@ -310,9 +302,9 @@ const Home = () => {
 				<Heading
 					as='h1'
 					color={Colors.secondary}
-					fontSize={{ base: '24px', sm: '30px', md: '45px' }}
+					fontSize={{ base: '36px', md: '40px', lg: '45px' }}
 					fontWeight='200'
-					mb={{ base: '16', md: '28', lg: '140px' }}
+					mb={{ base: '50px', md: '28', lg: '140px' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 				>
@@ -329,7 +321,7 @@ const Home = () => {
 					gap={{ base: 4, md: 6, xl: 0 }}
 				>
 					<Box
-						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
+						flexBasis={{ base: '75%', sm: '45%', md: '30%' }}
 						minW='0'
 						px={{ xl: 4 }}
 					>
@@ -349,7 +341,7 @@ const Home = () => {
 					</Box>
 
 					<Box
-						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
+						flexBasis={{ base: '75%', sm: '45%', md: '30%' }}
 						minW='0'
 						display='flex'
 						flexDirection='column'
@@ -388,7 +380,7 @@ const Home = () => {
 					</Box>
 
 					<Box
-						flexBasis={{ base: '100%', sm: '45%', md: '30%' }}
+						flexBasis={{ base: '75%', sm: '45%', md: '30%' }}
 						minW='0'
 						px={{ xl: 4 }}
 					>
@@ -412,7 +404,7 @@ const Home = () => {
 			<Box
 				as='article'
 				w='full'
-				p={{ base: '4', sm: '8', md: '16', lg: '24' }}
+				p={{ base: '12', md: '16', lg: '24' }}
 				display='flex'
 				flexDirection='column'
 				alignItems='center'
@@ -695,10 +687,10 @@ const Home = () => {
 				w='full'
 				h='80vh'
 				bgImage={`url(${valenInCouch})`}
-				bgSize='cover'
-				bgPosition='center'
+				bgSize={{ base: 'auto 100%', md: 'cover' }}
+				bgPosition={{ base: 'right center', md: 'center' }}
 				bgRepeat='no-repeat'
-				backgroundAttachment='fixed'
+				backgroundAttachment={{ base: 'scroll', md: 'fixed' }}
 				position='relative'
 				zIndex='0'
 			></Box>
@@ -935,9 +927,9 @@ const Home = () => {
 				h={{ base: '50vh', sm: '90vh' }}
 				bgImage={`url(${valenAndandres})`}
 				bgSize='cover'
-				bgPosition='center'
+				bgPosition={{ base: 'right', md: 'center' }}
 				bgRepeat='no-repeat'
-				backgroundAttachment={{ base: 'scroll', sm: 'fixed' }}
+				backgroundAttachment={{ base: 'scroll', md: 'fixed' }}
 				position='relative'
 				zIndex='0'
 				overflow='hidden'
@@ -1063,8 +1055,8 @@ const Home = () => {
 						md: '40px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
-					mt={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
+					mt={{ base: '4', md: '8' }}
+					mb={{ base: '4', md: '8' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -1103,8 +1095,8 @@ const Home = () => {
 						md: '40px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16' }}
-					mt={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
+					mt={{ base: '8', md: '8' }}
+					mb={{ base: '2', md: '8' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -1240,7 +1232,7 @@ const Home = () => {
 				<Box
 					w={{ base: '100%', lg: '50%' }}
 					p={{ base: '4', sm: '6', md: '8', lg: '22' }}
-					borderTop={{ base: '0.5px solid', lg: 'none' }}
+					borderTop={{ base: '3px solid', lg: 'none' }}
 					borderColor='rgba(128, 128, 128, 0.1)'
 					display='flex'
 					flexDirection='column'
@@ -1262,25 +1254,26 @@ const Home = () => {
 						<Box
 							key={index}
 							display='flex'
-							alignItems='flex-start'
+							flexDirection={{ base: 'column', md: 'row' }}
+							alignItems={{ base: 'center', md: 'flex-start' }}
 							gap={{ base: 4, md: 6 }}
 						>
 							<Image
 								src={item.icon}
 								objectFit='contain'
-								w={{ base: '40px', sm: '50px', md: '110px' }}
+								w={{ base: '100px', md: '50px', md: '110px' }}
 							/>
 							<Box
 								display='flex'
 								flexDirection='column'
+								alignItems={{ base: 'center', md: 'start' }}
 								gap={2}
 								justifyContent='center'
 							>
 								<Heading
-									as='h4'
+									as='h2'
 									fontSize={{
-										base: '28px',
-										sm: '32px',
+										base: '35px',
 										md: '40px',
 										lg: '45px',
 									}}
@@ -1290,18 +1283,20 @@ const Home = () => {
 								>
 									{item.title}
 								</Heading>
-								<Heading
-									as='h4'
+								<Text
 									fontSize={{
-										base: '22px',
-										sm: '24px',
+										base: '20px',
+										md: '24px',
 									}}
+									wordBreak={{ base: 'break-word', md: 'normal' }}
+									whiteSpace={{ base: 'normal' }}
+									textAlign={{ base: 'center', md: 'start' }}
 									fontWeight='100'
 									color={Colors.secondary}
 									fontFamily='montserrat bold'
 								>
 									{item.subtitle}
-								</Heading>
+								</Text>
 							</Box>
 						</Box>
 					))}
@@ -1312,8 +1307,11 @@ const Home = () => {
 				as='h1'
 				color={Colors.secondary}
 				fontSize={{
-					base: '32px',
+					base: '20px',
+					md: '30px',
 				}}
+				ml={{ base: '4', md: '0' }}
+				mr={{ base: '4', md: '0' }}
 				fontWeight='100'
 				mb={{ base: '8', sm: '12', md: '16', lg: '20', xl: '24' }}
 				fontFamily='montserrat'
