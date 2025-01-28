@@ -50,7 +50,7 @@ const Navbar = () => {
 			>
 				<Heading
 					as='h2'
-					fontSize={{ md: '28px', lg: '33px' }}
+					fontSize={{ md: '3vh', md: '2.5vh', lg: '3vh', xl: '3.5vh' }}
 					color={Colors.secondary}
 					letterSpacing='1px'
 					fontWeight='300'
@@ -61,7 +61,7 @@ const Navbar = () => {
 				</Heading>
 				<Heading
 					as='h2'
-					fontSize={{ md: '28px', lg: '32px' }}
+					fontSize={{ md: '3vh', md: '2.5vh', lg: '3vh', xl: '3.5vh' }}
 					color={Colors.secondary}
 					letterSpacing='1px'
 					fontWeight='300'
@@ -104,7 +104,7 @@ const Navbar = () => {
 			>
 				<Heading
 					as='h2'
-					fontSize={{ md: '28px', lg: '33px' }}
+					fontSize={{ md: '3vh', md: '2.5vh', lg: '3vh', xl: '3.5vh' }}
 					color={Colors.secondary}
 					letterSpacing='1px'
 					fontWeight='300'
@@ -115,7 +115,7 @@ const Navbar = () => {
 				</Heading>
 				<Heading
 					as='h2'
-					fontSize={{ md: '28px', lg: '32px' }}
+					fontSize={{ md: '3vh', md: '2.5vh', lg: '3vh', xl: '3.5vh' }}
 					color={Colors.secondary}
 					letterSpacing='1px'
 					fontWeight='300'
