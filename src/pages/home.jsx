@@ -1101,7 +1101,9 @@ const Home = () => {
 				<Box
 					as='ul'
 					listStyle='outside'
-					p={{ base: '8', sm: '12', md: '16' }}
+					pr={{ base: '8', sm: '12', md: '16' }}
+					pl={{ base: '8', sm: '12', md: '16' }}
+					pt={{ base: '8', sm: '12', md: '16' }}
 					minW={{ base: '100%', sm: '80%', md: '100%' }}
 					display='flex'
 					flexDirection='column'
