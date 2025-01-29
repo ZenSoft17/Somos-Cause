@@ -18,6 +18,14 @@ import mailIcon from '../assets/images/mail_icon.png'
 import whatsappIcon2 from '../assets/images/whatsapp_icon.png'
 import valenAndandres from '../assets/images/Valentina-3.jpg'
 import valenInCouch from '../assets/images/Valentina-68_E.jpg'
+import arrowTop from '../assets/images/Assets-12.png'
+
+function scrollToTop() {
+	window.scrollTo({
+		top: 0,
+		behavior: 'instant',
+	})
+}
 
 const Home = () => {
 	document.title = 'Somos Cauce - Terapia enfocada en soluciones'
@@ -530,7 +538,13 @@ const Home = () => {
 					flexWrap='wrap'
 					justifyContent='center'
 				>
-					<Box w={{ base: '100%', md: '50%' }} p={{ base: '4', sm: '8' }}>
+					<Box
+						w={{ base: '100%', md: '50%' }}
+						p={{ base: '4', sm: '8' }}
+						display='flex'
+						flexDirection='column'
+						justifyContent='space-between'
+					>
 						<Heading
 							as='h3'
 							color={Colors.secondary}
@@ -540,11 +554,6 @@ const Home = () => {
 							textAlign='center'
 							lineHeight={{ base: '1.1', sm: '1.2', md: '1.3' }}
 							px={{ base: '1', sm: '2' }}
-							display='flex'
-							flexWrap='wrap'
-							justifyContent='center'
-							alignItems='center'
-							gap={{ base: '0.5', sm: '1' }}
 							mb={{ base: '2', sm: '3', md: '4' }}
 						>
 							<Box as='span' display='inline-flex' alignItems='center'>
@@ -555,8 +564,8 @@ const Home = () => {
 						<Box
 							as='ul'
 							listStyle='outside'
-							p={{ base: '8', sm: '12', md: '16' }}
-							minW={{ base: '100%', sm: '80%', md: '100%' }}
+							p={{ base: '8', sm: '12', md: '12' }}
+							flexGrow={1}
 						>
 							{[
 								'Dificultades en la autoestima',
@@ -591,6 +600,9 @@ const Home = () => {
 						p={{ base: '4', sm: '8' }}
 						borderLeft={{ base: 'none', md: '0.5px solid' }}
 						borderColor={Colors.secondary}
+						display='flex'
+						flexDirection='column'
+						justifyContent='space-between'
 					>
 						<Box
 							display='flex'
@@ -607,11 +619,6 @@ const Home = () => {
 								textAlign='center'
 								lineHeight={{ base: '1.1', sm: '1.2', md: '1.3' }}
 								px={{ base: '1', sm: '2' }}
-								display='flex'
-								flexWrap='wrap'
-								justifyContent='center'
-								alignItems='center'
-								gap={{ base: '0.5', sm: '1' }}
 								mb='0'
 							>
 								<Box
@@ -656,8 +663,8 @@ const Home = () => {
 						<Box
 							as='ul'
 							listStyle='outside'
-							p={{ base: '8', sm: '12', md: '16' }}
-							minW={{ base: '100%', sm: '80%', md: '100%' }}
+							p={{ base: '8', sm: '12', md: '12' }}
+							flexGrow={1}
 						>
 							{[
 								'Dificultad para el control de impulsos',
@@ -955,7 +962,7 @@ const Home = () => {
 							base: '24px',
 							sm: '36px',
 							md: '48px',
-							lg: '50px',
+							xl: '50px',
 						}}
 						fontWeight='extrabold'
 						textTransform='uppercase'
@@ -967,6 +974,7 @@ const Home = () => {
 						letterSpacing={{ base: 'wide', sm: 'wider' }}
 						maxW='100%'
 						mx='auto'
+						whiteSpace='nowrap'
 					>
 						Terapia Centrada en
 					</Heading>
@@ -976,7 +984,7 @@ const Home = () => {
 							base: '24px',
 							sm: '36px',
 							md: '48px',
-							lg: '50px',
+							xl: '50px',
 						}}
 						fontWeight='extrabold'
 						textTransform='uppercase'
@@ -988,6 +996,7 @@ const Home = () => {
 						letterSpacing={{ base: 'wide', sm: 'wider' }}
 						maxW='100%'
 						mx='auto'
+						whiteSpace='nowrap'
 					>
 						Soluciones
 					</Heading>
@@ -1015,7 +1024,7 @@ const Home = () => {
 						lg: '45px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '30' }}
+					mb={{ base: '16', md: '16' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -1031,6 +1040,7 @@ const Home = () => {
 						md: '20px',
 						lg: '24px',
 					}}
+					mb={{ base: '16', md: '16' }}
 					fontFamily='montserrat'
 					textAlign='center'
 					w={{ base: '90%', sm: '85%', md: '80%', lg: '75%', xl: '70%' }}
@@ -1055,8 +1065,7 @@ const Home = () => {
 						md: '40px',
 					}}
 					fontWeight='200'
-					mt={{ base: '4', md: '8' }}
-					mb={{ base: '4', md: '8' }}
+					mb={{ base: '16', md: '16' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -1074,6 +1083,7 @@ const Home = () => {
 					}}
 					fontFamily='montserrat'
 					textAlign='center'
+					mb={{ base: '16', md: '16' }}
 					w={{ base: '90%', sm: '85%', md: '80%', lg: '75%', xl: '70%' }}
 					lineHeight='1.5'
 					zIndex={1}
@@ -1095,8 +1105,6 @@ const Home = () => {
 						md: '40px',
 					}}
 					fontWeight='200'
-					mt={{ base: '8', md: '8' }}
-					mb={{ base: '2', md: '8' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -1122,7 +1130,12 @@ const Home = () => {
 							key={index}
 							color={Colors.third}
 							fontWeight='100'
-							fontSize={{ base: '18px', md: '22px', lg: '28px' }}
+							fontSize={{
+								base: '16px',
+								sm: '18px',
+								md: '20px',
+								lg: '24px',
+							}}
 							fontFamily='montserrat'
 							lineHeight='1.5'
 							textAlign='center'
@@ -1320,6 +1333,25 @@ const Home = () => {
 			>
 				Síguenos en todas nuestras redes y pide tu cita.
 			</Heading>
+
+			<Box
+				w='full'
+				display='flex'
+				justifyContent='center'
+				mb={{ base: '8', sm: '12', md: '16', lg: '20', xl: '24' }}
+				cursor='pointer'
+			>
+				<Image
+					onClick={scrollToTop}
+					src={arrowTop}
+					objectFit='contain'
+					w='70px'
+					h='70px'
+					_hover={{
+						transform: 'scale(1.05)',
+					}}
+				/>
+			</Box>
 		</MainLayout>
 	)
 }
