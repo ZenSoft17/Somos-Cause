@@ -19,7 +19,6 @@ import whatsappIcon2 from '../assets/images/whatsapp_icon.png'
 import valenAndandres from '../assets/images/Valentina-3.jpg'
 import valenInCouch from '../assets/images/Valentina-68_E.jpg'
 
-
 const Home = () => {
 	document.title = 'Somos Cauce - Terapia enfocada en soluciones'
 
@@ -912,7 +911,7 @@ const Home = () => {
 							key={index}
 							color={Colors.third}
 							fontWeight='100'
-							fontSize={{ base: '18px', md: '22px', lg: '28px' }}
+							fontSize={{ base: '16px', sm: '18px', md: '20px', lg: '24px' }}
 							fontFamily='montserrat'
 							lineHeight='1.5'
 						>
@@ -1326,7 +1325,6 @@ const Home = () => {
 			>
 				Síguenos en todas nuestras redes y pide tu cita.
 			</Heading>
-
 		</MainLayout>
 	)
 }
