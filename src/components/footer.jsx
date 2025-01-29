@@ -59,7 +59,7 @@ const Footer = () => {
 					</Heading>
 					<Box
 						mt='6px'
-						w={{ base: '110%', md: '140%', lg: '150%' }}
+						w={{ base: '110%', md: '140%', lg: '160%' }}
 						h='2px'
 						bg={Colors.primary}
 					/>

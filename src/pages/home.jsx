@@ -720,6 +720,7 @@ const Home = () => {
 						lg: '45px',
 					}}
 					fontWeight='200'
+					mt={{base : '6', md : '0'}}
 					mb={{ base: '12', sm: '16', md: '20' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
@@ -1008,6 +1009,7 @@ const Home = () => {
 						lg: '45px',
 					}}
 					fontWeight='200'
+					mt={{ base: '8', md: '0' }}
 					mb={{ base: '16', md: '16' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
@@ -1092,6 +1094,7 @@ const Home = () => {
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
+					mb={{ base: '6', md: '0' }}
 				>
 					¿Por qué elegir nuestros talleres?
 				</Heading>
