@@ -11,6 +11,7 @@ const Footer = () => {
 			as='footer'
 			bg={Colors.secondary}
 			w='full'
+			h='300px'
 			minH={{ base: '200px', md: '250px' }}
 			position='relative'
 			overflow='hidden'
@@ -31,35 +32,36 @@ const Footer = () => {
 				<Image
 					src={Logo2}
 					objectFit='contain'
-					w={{ base: '130px', sm: '250px' }}
-					h={{ base: '130px', sm: '250px' }}
+					w={{ base: '150px', sm: '150px' }}
+					h={{ base: '150px', sm: '150px' }}
 					flex='0 0 auto'
 				/>
 
 				<Box
 					position='relative'
+					display='flex'
+					flexDirection='column'
+					alignItems='center'
 					maxW={{ base: '300px', md: '400px' }}
 					flex='0 1 auto'
 				>
 					<Heading
 						as='h1'
 						fontFamily='montserrat'
-						fontSize={{ base: '16px', sm: '18px', md: '22px', lg: '25px' }}
+						fontSize={{ base: '16px', sm: '18px', md: '20px', lg: '22px' }}
 						color={Colors.primary}
 						fontWeight='100'
 						textAlign='center'
-						lineHeight='1.4'
+						lineHeight='1'
+						whiteSpace={{ base : 'normal', md : 'nowrap'}}
 					>
 						Todos los derechos reservados © {getYear} - Somos Cauce
 					</Heading>
 					<Box
-						position='absolute'
-						bottom='-8px'
-						left='50%'
-						transform='translateX(-50%)'
-						w='120%'
+						mt='6px'
+						w={{ base: '110%', md: '140%', lg: '150%' }}
 						h='2px'
-						bg='white'
+						bg={Colors.primary}
 					/>
 				</Box>
 
@@ -74,8 +76,8 @@ const Footer = () => {
 					<Image
 						src={keyBg}
 						objectFit='contain'
-						w={{ base: '200px', sm: '250px', md: '300px', lg: '300px' }}
-						h={{ base: '200px', sm: '250px', md: '300px', lg: '300px' }}
+						w={{ base: '200px', sm: '250px' }}
+						h={{ base: '200px', sm: '250px' }}
 					/>
 				</Box>
 			</Box>

@@ -314,147 +314,82 @@ const Home = () => {
 				</Heading>
 
 				<Box
-					id='our-services'
-					as='article'
 					w='full'
-					p={{ base: '50px', md: '16', lg: '24', xl: '140px' }}
+					maxW='1440px'
 					display='flex'
-					flexDirection='column'
+					flexDirection={{ base: 'column', md: 'row' }}
+					justifyContent='center'
 					alignItems='center'
+					gap={{ base: 6, md: 8, lg: 10 }}
+					flexWrap={{ base: 'wrap', md: 'nowrap' }}
 				>
-					<Heading
-						as='h1'
-						color={Colors.secondary}
-						fontSize={{ base: '36px', md: '40px', lg: '45px' }}
-						fontWeight='200'
-						mb={{ base: '50px', md: '28', lg: '140px' }}
-						fontFamily='sugo pro display'
-						textAlign='center'
+					<Box
+						flex={{ base: '1 1 100%', md: '1 1 30%' }}
+						minW='280px'
+						maxW={{ base: '100%', md: '360px' }}
 					>
-						Nuestros Servicios
-					</Heading>
+						<a href='#individual-therapy'>
+							<Image
+								src={individualTerapy}
+								alt='Terapia Individual'
+								objectFit='contain'
+								w={{ base: '100%', md: '90%' }}
+								h={{ base: '200px', md: '280px', lg: '300px' }}
+								transition='transform 0.3s ease'
+								_hover={{ transform: 'scale(1.02)' }}
+							/>
+						</a>
+					</Box>
 
 					<Box
-						id='our-services'
-						as='article'
-						w='full'
-						p={{ base: '50px', md: '16', lg: '24', xl: '140px' }}
+						flex={{ base: '1 1 100%', md: '1 1 30%' }}
+						minW='280px'
+						maxW={{ base: '100%', md: '360px' }}
 						display='flex'
 						flexDirection='column'
 						alignItems='center'
+						gap={{ base: 6, md: 8 }}
 					>
-						<Heading
-							as='h1'
-							color={Colors.secondary}
-							fontSize={{ base: '36px', md: '40px', lg: '45px' }}
-							fontWeight='200'
-							mb={{ base: '50px', md: '28', lg: '140px' }}
-							fontFamily='sugo pro display'
-							textAlign='center'
-						>
-							Nuestros Servicios
-						</Heading>
+						<a href='#couple-therapy' style={{ width: '100%' }}>
+							<Image
+								src={coupleTerapy}
+								alt='Terapia de Pareja'
+								objectFit='contain'
+								w={{ base: '100%', md: '90%' }}
+								h={{ base: '200px', md: '280px', lg: '300px' }}
+								transition='transform 0.3s ease'
+								_hover={{ transform: 'scale(1.02)' }}
+							/>
+						</a>
+						<a href='#sexual-therapy' style={{ width: '100%' }}>
+							<Image
+								src={sexualTerapy}
+								alt='Terapia Sexual'
+								objectFit='contain'
+								w={{ base: '100%', md: '90%' }}
+								h={{ base: '200px', md: '280px', lg: '300px' }}
+								transition='transform 0.3s ease'
+								_hover={{ transform: 'scale(1.02)' }}
+							/>
+						</a>
+					</Box>
 
-						<Box
-							id='our-services'
-							as='article'
-							w='full'
-							p={{ base: '50px', md: '16', lg: '24', xl: '140px' }}
-							display='flex'
-							flexDirection='column'
-							alignItems='center'
-						>
-							<Heading
-								as='h1'
-								color={Colors.secondary}
-								fontSize={{ base: '36px', md: '40px', lg: '45px' }}
-								fontWeight='200'
-								mb={{ base: '50px', md: '28', lg: '140px' }}
-								fontFamily='sugo pro display'
-								textAlign='center'
-							>
-								Nuestros Servicios
-							</Heading>
-
-							<Box
-								w='full'
-								maxW='1440px'
-								display='flex'
-								justifyContent='center'
-								alignItems='center'
-								gap={{ base: 6, md: 8, lg: 10 }}
-								flexWrap={{ base: 'wrap', sm: 'nowrap' }} // No wrapping on screens larger than 800px
-							>
-								<Box
-									flex={{ base: '1 1 100%', sm: '1 1 30%' }}
-									minW='280px'
-									maxW={{ base: '100%', sm: '400px' }} // Restrict width for larger screens
-								>
-									<a href='#individual-therapy'>
-										<Image
-											src={individualTerapy}
-											alt='Terapia Individual'
-											objectFit='contain'
-											w='100%'
-											h={{ base: '200px', md: '250px' }}
-											transition='transform 0.3s ease'
-											_hover={{ transform: 'scale(1.02)' }}
-										/>
-									</a>
-								</Box>
-
-								<Box
-									flex={{ base: '1 1 100%', sm: '1 1 30%' }}
-									minW='280px'
-									maxW={{ base: '100%', sm: '400px' }} // Restrict width for larger screens
-									display='flex'
-									flexDirection='column'
-									alignItems='center'
-									gap={{ base: 6, md: 8 }}
-								>
-									<a href='#couple-therapy' style={{ width: '100%' }}>
-										<Image
-											src={coupleTerapy}
-											alt='Terapia de Pareja'
-											objectFit='contain'
-											w='100%'
-											h={{ base: '200px', md: '250px' }}
-											transition='transform 0.3s ease'
-											_hover={{ transform: 'scale(1.02)' }}
-										/>
-									</a>
-									<a href='#sexual-therapy' style={{ width: '100%' }}>
-										<Image
-											src={sexualTerapy}
-											alt='Terapia Sexual'
-											objectFit='contain'
-											w='100%'
-											h={{ base: '200px', md: '250px' }}
-											transition='transform 0.3s ease'
-											_hover={{ transform: 'scale(1.02)' }}
-										/>
-									</a>
-								</Box>
-
-								<Box
-									flex={{ base: '1 1 100%', sm: '1 1 30%' }}
-									minW='280px'
-									maxW={{ base: '100%', sm: '400px' }} // Restrict width for larger screens
-								>
-									<a href='#family-therapy'>
-										<Image
-											src={familyTerapy}
-											alt='Terapia Familiar'
-											objectFit='contain'
-											w='100%'
-											h={{ base: '200px', md: '250px' }}
-											transition='transform 0.3s ease'
-											_hover={{ transform: 'scale(1.02)' }}
-										/>
-									</a>
-								</Box>
-							</Box>
-						</Box>
+					<Box
+						flex={{ base: '1 1 100%', md: '1 1 30%' }}
+						minW='280px'
+						maxW={{ base: '100%', md: '360px' }}
+					>
+						<a href='#family-therapy'>
+							<Image
+								src={familyTerapy}
+								alt='Terapia Familiar'
+								objectFit='contain'
+								w={{ base: '100%', md: '90%' }}
+								h={{ base: '200px', md: '280px', lg: '300px' }}
+								transition='transform 0.3s ease'
+								_hover={{ transform: 'scale(1.02)' }}
+							/>
+						</a>
 					</Box>
 				</Box>
 			</Box>
@@ -729,7 +664,7 @@ const Home = () => {
 									key={index}
 									color={Colors.secondary}
 									fontWeight='100'
-									fontSize={{ base: '18px', md: '22px' }}
+									fontSize={{ base: '18px', md: '20px' }}
 									fontFamily='montserrat'
 								>
 									{text}

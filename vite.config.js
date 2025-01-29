@@ -8,5 +8,5 @@ export default defineConfig({
 	server: {
 		port: 3460,
 	},
-	base: '/Somos-Cause/',
+	base: '/Somos-Cauce/',
 })
