@@ -27,6 +27,7 @@ const MainLayout = ({ children }) => {
 					position='fixed'
 					bottom='24'
 					right='6'
+					zIndex='999'
 				/>
 			</a>
 			<Box
@@ -34,6 +35,7 @@ const MainLayout = ({ children }) => {
 				position='fixed'
 				bottom='6'
 				right='6'
+				zIndex='999'
 			>
 				<Image
 					onClick={scrollToTop}

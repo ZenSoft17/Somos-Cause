@@ -69,6 +69,7 @@ const Footer = () => {
 					bottom={{ base: '0', md: 'auto' }}
 					opacity={{ base: 0.3, md: 1 }}
 					flex='0 0 auto'
+					zIndex='1'
 				>
 					<Image
 						src={keyBg}

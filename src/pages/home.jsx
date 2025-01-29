@@ -73,28 +73,30 @@ const Home = () => {
 					Cauce tanto tú como nosotros somos expertos, por eso brindamos un
 					trabajo colaborativo centrado en soluciones.
 				</Text>
-				<Button
-					size='lg'
-					bg={Colors.secondary}
-					color={Colors.third}
-					px={{ base: '8', md: '12' }}
-					py={{ base: '6', md: '8' }}
-					fontSize={{ base: '18px', md: '20px' }}
-					fontFamily='montserrat'
-					fontWeight='500'
-					transform='scale(1)'
-					transition='all 0.3s ease'
-					_hover={{
-						transform: 'scale(1.05)',
-						bg: Colors.secondary,
-						boxShadow: 'xl',
-					}}
-					_active={{
-						transform: 'scale(0.95)',
-					}}
-				>
-					Agenda tu cita ahora
-				</Button>
+				<a href='https://wa.me/573153416995?text=Hola,%20quiero%20agendar%20una%20cita.'>
+					<Button
+						size='lg'
+						bg={Colors.secondary}
+						color={Colors.third}
+						px={{ base: '8', md: '12' }}
+						py={{ base: '6', md: '8' }}
+						fontSize={{ base: '18px', md: '20px' }}
+						fontFamily='montserrat'
+						fontWeight='500'
+						transform='scale(1)'
+						transition='all 0.3s ease'
+						_hover={{
+							transform: 'scale(1.05)',
+							bg: Colors.secondary,
+							boxShadow: 'xl',
+						}}
+						_active={{
+							transform: 'scale(0.95)',
+						}}
+					>
+						Agenda tu cita ahora
+					</Button>
+				</a>
 			</Box>
 
 			<Box
@@ -312,91 +314,147 @@ const Home = () => {
 				</Heading>
 
 				<Box
+					id='our-services'
+					as='article'
 					w='full'
-					maxW='1440px'
+					p={{ base: '50px', md: '16', lg: '24', xl: '140px' }}
 					display='flex'
-					flexWrap='wrap'
-					justifyContent='center'
+					flexDirection='column'
 					alignItems='center'
-					gap={{ base: 4, md: 6, xl: 0 }}
 				>
-					<Box
-						flexBasis={{ base: '75%', sm: '45%', md: '30%' }}
-						minW='0'
-						px={{ xl: 4 }}
+					<Heading
+						as='h1'
+						color={Colors.secondary}
+						fontSize={{ base: '36px', md: '40px', lg: '45px' }}
+						fontWeight='200'
+						mb={{ base: '50px', md: '28', lg: '140px' }}
+						fontFamily='sugo pro display'
+						textAlign='center'
 					>
-						<a href='#individual-therapy'>
-							<Image
-								src={individualTerapy}
-								alt='Terapia Individual'
-								objectFit='contain'
-								w='100%'
-								h={{ base: '200px', md: '250px' }}
-								transition='transform 0.3s ease'
-								_hover={{
-									transform: 'scale(1.02)',
-								}}
-							/>
-						</a>
-					</Box>
+						Nuestros Servicios
+					</Heading>
 
 					<Box
-						flexBasis={{ base: '75%', sm: '45%', md: '30%' }}
-						minW='0'
+						id='our-services'
+						as='article'
+						w='full'
+						p={{ base: '50px', md: '16', lg: '24', xl: '140px' }}
 						display='flex'
 						flexDirection='column'
 						alignItems='center'
-						gap={{ base: 4, md: 6 }}
-						mx={{ xl: '-16' }}
 					>
-						<a href='#couple-therapy' style={{ width: '100%' }}>
-							<Image
-								src={coupleTerapy}
-								alt='Terapia de Pareja'
-								objectFit='contain'
-								w='100%'
-								h={{ base: '200px', md: '250px' }}
-								transition='transform 0.3s ease'
-								_hover={{
-									transform: 'scale(1.02)',
-								}}
-								mb='3'
-							/>
-						</a>
-						<a href='#sexual-therapy' style={{ width: '100%' }}>
-							<Image
-								mt='3'
-								src={sexualTerapy}
-								alt='Terapia Sexual'
-								objectFit='contain'
-								w='100%'
-								h={{ base: '200px', md: '250px' }}
-								transition='transform 0.3s ease'
-								_hover={{
-									transform: 'scale(1.02)',
-								}}
-							/>
-						</a>
-					</Box>
+						<Heading
+							as='h1'
+							color={Colors.secondary}
+							fontSize={{ base: '36px', md: '40px', lg: '45px' }}
+							fontWeight='200'
+							mb={{ base: '50px', md: '28', lg: '140px' }}
+							fontFamily='sugo pro display'
+							textAlign='center'
+						>
+							Nuestros Servicios
+						</Heading>
 
-					<Box
-						flexBasis={{ base: '75%', sm: '45%', md: '30%' }}
-						minW='0'
-						px={{ xl: 4 }}
-					>
-						<a href='#family-therapy'>
-							<Image
-								src={familyTerapy}
-								alt='Terapia Familiar'
-								objectFit='contain'
-								w='100%'
-								h={{ base: '200px', md: '250px' }}
-								transition='transform 0.3s ease'
-								_hover={{
-									transform: 'scale(1.02)',
-								}}
-							/>
-						</a>
+						<Box
+							id='our-services'
+							as='article'
+							w='full'
+							p={{ base: '50px', md: '16', lg: '24', xl: '140px' }}
+							display='flex'
+							flexDirection='column'
+							alignItems='center'
+						>
+							<Heading
+								as='h1'
+								color={Colors.secondary}
+								fontSize={{ base: '36px', md: '40px', lg: '45px' }}
+								fontWeight='200'
+								mb={{ base: '50px', md: '28', lg: '140px' }}
+								fontFamily='sugo pro display'
+								textAlign='center'
+							>
+								Nuestros Servicios
+							</Heading>
+
+							<Box
+								w='full'
+								maxW='1440px'
+								display='flex'
+								justifyContent='center'
+								alignItems='center'
+								gap={{ base: 6, md: 8, lg: 10 }}
+								flexWrap={{ base: 'wrap', sm: 'nowrap' }} // No wrapping on screens larger than 800px
+							>
+								<Box
+									flex={{ base: '1 1 100%', sm: '1 1 30%' }}
+									minW='280px'
+									maxW={{ base: '100%', sm: '400px' }} // Restrict width for larger screens
+								>
+									<a href='#individual-therapy'>
+										<Image
+											src={individualTerapy}
+											alt='Terapia Individual'
+											objectFit='contain'
+											w='100%'
+											h={{ base: '200px', md: '250px' }}
+											transition='transform 0.3s ease'
+											_hover={{ transform: 'scale(1.02)' }}
+										/>
+									</a>
+								</Box>
+
+								<Box
+									flex={{ base: '1 1 100%', sm: '1 1 30%' }}
+									minW='280px'
+									maxW={{ base: '100%', sm: '400px' }} // Restrict width for larger screens
+									display='flex'
+									flexDirection='column'
+									alignItems='center'
+									gap={{ base: 6, md: 8 }}
+								>
+									<a href='#couple-therapy' style={{ width: '100%' }}>
+										<Image
+											src={coupleTerapy}
+											alt='Terapia de Pareja'
+											objectFit='contain'
+											w='100%'
+											h={{ base: '200px', md: '250px' }}
+											transition='transform 0.3s ease'
+											_hover={{ transform: 'scale(1.02)' }}
+										/>
+									</a>
+									<a href='#sexual-therapy' style={{ width: '100%' }}>
+										<Image
+											src={sexualTerapy}
+											alt='Terapia Sexual'
+											objectFit='contain'
+											w='100%'
+											h={{ base: '200px', md: '250px' }}
+											transition='transform 0.3s ease'
+											_hover={{ transform: 'scale(1.02)' }}
+										/>
+									</a>
+								</Box>
+
+								<Box
+									flex={{ base: '1 1 100%', sm: '1 1 30%' }}
+									minW='280px'
+									maxW={{ base: '100%', sm: '400px' }} // Restrict width for larger screens
+								>
+									<a href='#family-therapy'>
+										<Image
+											src={familyTerapy}
+											alt='Terapia Familiar'
+											objectFit='contain'
+											w='100%'
+											h={{ base: '200px', md: '250px' }}
+											transition='transform 0.3s ease'
+											_hover={{ transform: 'scale(1.02)' }}
+										/>
+									</a>
+								</Box>
+							</Box>
+						</Box>
 					</Box>
 				</Box>
 			</Box>
@@ -727,7 +785,7 @@ const Home = () => {
 						lg: '45px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '30' }}
+					mb={{ base: '12', sm: '16', md: '20' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -747,6 +805,7 @@ const Home = () => {
 					textAlign='center'
 					w={{ base: '90%', sm: '85%', md: '80%', lg: '75%', xl: '70%' }}
 					lineHeight='1.5'
+					mb={{ base: '12', sm: '16', md: '20' }}
 					zIndex={1}
 				>
 					Apoyo profesional para mejorar en el desarrollo personal, un espacio
@@ -764,8 +823,7 @@ const Home = () => {
 						lg: '45px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
-					mt={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
+					mb={{ base: '12', sm: '16', md: '20' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -785,6 +843,7 @@ const Home = () => {
 					textAlign='center'
 					w={{ base: '90%', sm: '85%', md: '80%', lg: '75%', xl: '70%' }}
 					lineHeight='1.5'
+					mb={{ base: '12', sm: '16', md: '20' }}
 					zIndex={1}
 				>
 					Apoyo profesional para mejorar en el desarrollo personal, un espacio
@@ -802,8 +861,7 @@ const Home = () => {
 						lg: '45px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
-					mt={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
+					mb={{ base: '12', sm: '16', md: '20' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -820,6 +878,7 @@ const Home = () => {
 						lg: '24px',
 					}}
 					fontFamily='montserrat'
+					mb={{ base: '12', sm: '16', md: '20' }}
 					textAlign='center'
 					w={{ base: '90%', sm: '85%', md: '80%', lg: '75%', xl: '70%' }}
 					lineHeight='1.5'
@@ -842,8 +901,7 @@ const Home = () => {
 						lg: '45px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
-					mt={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
+					mb={{ base: '12', sm: '16', md: '20' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -864,6 +922,7 @@ const Home = () => {
 					w={{ base: '90%', sm: '85%', md: '80%', lg: '75%', xl: '70%' }}
 					lineHeight='1.5'
 					zIndex={1}
+					mb={{ base: '12', sm: '16', md: '16' }}
 				>
 					Tener una consulta puede ayudarte a resolver distintos problemas e
 					inquietudes en el ámbito de la sexualidad, además de ayudarte a
@@ -881,8 +940,6 @@ const Home = () => {
 						lg: '45px',
 					}}
 					fontWeight='200'
-					mb={{ base: '12', sm: '16', md: '20' }}
-					mt={{ base: '12', sm: '16', md: '20', lg: '28', xl: '32' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
 					zIndex={1}
@@ -1210,8 +1267,11 @@ const Home = () => {
 								icon: whatsappIcon2,
 								href: 'https://wa.me/573153416995?text=Hola,%20quiero%20agendar%20una%20cita.',
 							},
-							{ icon: InstagramIcon, href: '' },
-							{ icon: mailIcon, href: 'somoscauces@gmail.com' },
+							{
+								icon: InstagramIcon,
+								href: 'https://www.instagram.com/somoscauce/',
+							},
+							{ icon: mailIcon, href: 'mailto:somoscauces@gmail.com' },
 						].map((item, index) => (
 							<a key={index} href={item.href}>
 								<Image
@@ -1325,6 +1385,38 @@ const Home = () => {
 			>
 				Síguenos en todas nuestras redes y pide tu cita.
 			</Heading>
+
+			<a href='https://wa.me/573153416995?text=Hola,%20quiero%20agendar%20una%20cita.'>
+				<Box
+					w='full'
+					display='flex'
+					justifyContent='center'
+					mb={{ base: '8', sm: '12', md: '16', lg: '20', xl: '24' }}
+				>
+					<Button
+						size='lg'
+						bg={Colors.secondary}
+						color={Colors.third}
+						px={{ base: '8', md: '12' }}
+						py={{ base: '6', md: '8' }}
+						fontSize={{ base: '18px', md: '20px' }}
+						fontFamily='montserrat'
+						fontWeight='500'
+						transform='scale(1)'
+						transition='all 0.3s ease'
+						_hover={{
+							transform: 'scale(1.05)',
+							bg: Colors.secondary,
+							boxShadow: 'xl',
+						}}
+						_active={{
+							transform: 'scale(0.95)',
+						}}
+					>
+						Agenda tu cita ahora
+					</Button>
+				</Box>
+			</a>
 		</MainLayout>
 	)
 }
