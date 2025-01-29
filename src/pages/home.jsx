@@ -18,14 +18,7 @@ import mailIcon from '../assets/images/mail_icon.png'
 import whatsappIcon2 from '../assets/images/whatsapp_icon.png'
 import valenAndandres from '../assets/images/Valentina-3.jpg'
 import valenInCouch from '../assets/images/Valentina-68_E.jpg'
-import arrowTop from '../assets/images/Assets-12.png'
 
-function scrollToTop() {
-	window.scrollTo({
-		top: 0,
-		behavior: 'instant',
-	})
-}
 
 const Home = () => {
 	document.title = 'Somos Cauce - Terapia enfocada en soluciones'
@@ -1334,24 +1327,6 @@ const Home = () => {
 				Síguenos en todas nuestras redes y pide tu cita.
 			</Heading>
 
-			<Box
-				w='full'
-				display='flex'
-				justifyContent='center'
-				mb={{ base: '8', sm: '12', md: '16', lg: '20', xl: '24' }}
-				cursor='pointer'
-			>
-				<Image
-					onClick={scrollToTop}
-					src={arrowTop}
-					objectFit='contain'
-					w='70px'
-					h='70px'
-					_hover={{
-						transform: 'scale(1.05)',
-					}}
-				/>
-			</Box>
 		</MainLayout>
 	)
 }
