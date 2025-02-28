@@ -892,12 +892,12 @@ const Home = () => {
 					alignItems='center'
 				>
 					{[
-						'Dificultad para el control de impulsos',
-						'Dificultad para el seguimiento de instrucciones',
-						'Dificultad para relacionarse con sus compañeros',
-						'Para mejorar la inteligencia emocional',
-						'Cuando los padres atraviesan por procesos de separación',
-						'Por disminución en su autoestima',
+						'Deseo sexual bajo-alto discordante',
+						'Interés sexual, fantasías y erotismo',
+						'Excitación sexual',
+						'Problemas o inquietudes en el orgasmo',
+						'Inquietudes particulares',
+						'Diﬁcultad con los vínculos',
 					].map((text, index) => (
 						<Heading
 							as='li'
