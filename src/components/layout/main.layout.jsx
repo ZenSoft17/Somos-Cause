@@ -18,7 +18,7 @@ const MainLayout = ({ children }) => {
 			<Navbar />
 			{children}
 			<Footer />
-			<a href='https://wa.me/573153416995?text=Hola,%20quiero%20agendar%20una%20cita.'>
+			<a href='https://wa.me/573106646624?text=Hola%2C+quisiera+agendar+una+cita%2C+%C2%BFMe+puedes+dar+m%C3%A1s+informaci%C3%B3n%3F'>
 				<Image
 					w='70px'
 					h='70px'
