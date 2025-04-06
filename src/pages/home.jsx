@@ -73,7 +73,7 @@ const Home = () => {
 					Cauce tanto tú como nosotros somos expertos, por eso brindamos un
 					trabajo colaborativo centrado en soluciones.
 				</Text>
-				<a href='https://wa.me/573153416995?text=Hola,%20quiero%20agendar%20una%20cita.'>
+				<a href='https://wa.me/573106646624?text=Hola%2C+quisiera+agendar+una+cita%2C+%C2%BFMe+puedes+dar+m%C3%A1s+informaci%C3%B3n%3F'>
 					<Button
 						size='lg'
 						bg={Colors.secondary}
@@ -720,7 +720,7 @@ const Home = () => {
 						lg: '45px',
 					}}
 					fontWeight='200'
-					mt={{base : '6', md : '0'}}
+					mt={{ base: '6', md: '0' }}
 					mb={{ base: '12', sm: '16', md: '20' }}
 					fontFamily='sugo pro display'
 					textAlign='center'
@@ -1205,7 +1205,7 @@ const Home = () => {
 						{[
 							{
 								icon: whatsappIcon2,
-								href: 'https://wa.me/573153416995?text=Hola,%20quiero%20agendar%20una%20cita.',
+								href: 'https://wa.me/573106646624?text=Hola%2C+quisiera+agendar+una+cita%2C+%C2%BFMe+puedes+dar+m%C3%A1s+informaci%C3%B3n%3F',
 							},
 							{
 								icon: InstagramIcon,
@@ -1326,7 +1326,9 @@ const Home = () => {
 				Síguenos en todas nuestras redes y pide tu cita.
 			</Heading>
 
-			<a href='https://wa.me/573153416995?text=Hola,%20quiero%20agendar%20una%20cita.'>
+			<a
+				href='https://wa.me/573106646624?text=Hola%2C+quisiera+agendar+una+cita%2C+%C2%BFMe+puedes+dar+m%C3%A1s+informaci%C3%B3n%3F'
+			>
 				<Box
 					w='full'
 					display='flex'
